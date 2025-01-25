@@ -1,3 +1,3 @@
 #!/usr/bin/bash
 aaa=$1
-g++ -o ./tmp/$aaa.elf ./uploads/$aaa.c
+g++ -o ./tmp/$aaa.elf ./uploads/$aaa.cpp

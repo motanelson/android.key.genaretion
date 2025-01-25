@@ -31,7 +31,7 @@ HTML_TEMPLATE = '''
 <body>
     <h1>Upload a CS File</h1>
     <form method="post" action="/upload" enctype="multipart/form-data">
-        <input type="file" name="cfile" accept=".c" required />
+        <input type="file" name="cfile" accept=".cpp" required />
         <button type="submit">Upload and Compile</button>
     </form>
 </body>
@@ -103,11 +103,11 @@ def upload_file():
     if file.filename == '':
         return "No selected file", 400
 
-    if not file.filename.endswith('.c'):
-        return "Only .c files are allowed", 400
+    if not file.filename.endswith('.cpp'):
+        return "Only .cpp files are allowed", 400
 
     # Salvar o arquivo
-    c_file_path = os.path.join(UPLOAD_FOLDER, str(file_counters)+".c")
+    c_file_path = os.path.join(UPLOAD_FOLDER, str(file_counters)+".cpp")
     file.save(c_file_path)
 
     # Nome do executável
