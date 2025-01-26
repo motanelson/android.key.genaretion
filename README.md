@@ -1,3 +1,1 @@
-online compiler 
-server to compile in a far host
-
+zero a application type dd command from linux
