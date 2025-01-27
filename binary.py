@@ -1,6 +1,6 @@
 print("\033c\033[43;30m\n")
 
-class bin:
+class bins:
     def __init__(self):
         self.bytes=b'\0'*4096
         self.returns=b''
@@ -21,7 +21,7 @@ class bin:
         f1.close()
 c=input("give me file name ? ")
 a=input("give me size in bytes ? ") 
-b=bin()
+b=bins()
 b.sizes=int(a)
 b.names=c
 
