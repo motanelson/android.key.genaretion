@@ -1,1 +1,1 @@
-command line calculator
+command line edit simple editor minimized
