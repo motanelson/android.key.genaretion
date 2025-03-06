@@ -1,1 +1,1 @@
-command line edit simple editor minimized
+command line calc sum simple calc sum minimized
