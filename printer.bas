@@ -1,4 +1,4 @@
-#lang "fblite"
+
 dim t as integer=1
 dim fts(0 to 2000) as double
 dim ft(0 to 2000) as double
@@ -12,21 +12,11 @@ cls
 
 print "creat..."
 input "file to print .txt text or image ? ",a
-
+t=1
 ccc=1
 aa=""
 if instr(a,".txt")>0 then
-    open a for input as #1
-    while t
-        line input #1, aa
-        lprint aa ; chr(13)+chr(10)
-        if eof(1) then t=0
-        
-        
-    wend
-    
-    close #1
-    lprint chr(12)
+    shell "notepad /p "+ a
 else
     shell "pbrush /p "+ a
 end if
