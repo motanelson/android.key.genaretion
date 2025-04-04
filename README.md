@@ -1,1 +1,1 @@
-prints .bmp and .txt to printer
+encripter 256
