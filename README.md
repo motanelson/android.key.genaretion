@@ -1,5 +1,4 @@
 
-mono.os.x86
 
 
 ssl user sdcard user:mono pass:monoos
